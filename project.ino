@@ -234,7 +234,7 @@ void setup() {
       temp = line0.substring(sky_start + 4, sky_start+5);
       Serial.print(F("sky: ")); 
       Serial.println(temp); 
-      BrightG = temp.toInt(); // 자료형 변경 String -> float Serial.print(F("temp0: ")); Serial.println(temp0);
+      BrightG = temp.toInt(); 
       BrightG = (int)((BrightG/4)*255);
 
       Serial.println("weather data for parsing");
